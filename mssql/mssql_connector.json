@@ -1,0 +1,16 @@
+{
+    "name": "mssql_connector",
+    "config": {
+        "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector", 
+        "database.hostname": "mssql", 
+        "database.port": "1433", 
+        "database.user": "sa", 
+        "database.password": "c37kW6MB", 
+        "database.names": "test_db", 
+        "topic.prefix": "mssqlserver1", 
+        "table.include.list": "dbo.persons", 
+        "schema.history.internal.kafka.bootstrap.servers": "kafka:9092", 
+        "schema.history.internal.kafka.topic": "schema-changes.persons",
+        "driver.trustServerCertificate": true
+    }
+}   
